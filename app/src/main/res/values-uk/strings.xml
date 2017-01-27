@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Розклад занять ФІТУ</string>
+    <string name="riven">Оберіть Ваш рівень</string>
+    <string name="specialnist">Оберіть Вашу спеціальність</string>
+    <string name="f_cr">1 курс</string>
+    <string name="s_cr">2 курс</string>
+    <string name="t_cr">3 курс</string>
+    <string name="fo_cr">4 курс</string>
+    <string name="fif_cr">5 курс</string>
+    <string name="six_cr">6 курс</string>
+    <string name="svn_cr">7 курс</string>
+    <string name="poned">Понеділок</string>
+    <string name="vivtorok">Вівторок</string>
+    <string name="sreda">Середа</string>
+    <string name="chetverg">Четвер</string>
+    <string name="pyatnica">Пятниця</string>
+    <string name="subt">Субота</string>
+</resources>

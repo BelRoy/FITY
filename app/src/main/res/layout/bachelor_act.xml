@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AppTheme">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_bach"
+        android:text="@string/specialnist"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/txt_spec"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:layout_below="@+id/txt_bach"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView2" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_below="@+id/txt_bach"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView3" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/infor"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/txt_menu_size"
+        android:id="@+id/inf_b"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:layout_below="@+id/inf_b"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView4" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menedj"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/txt_menu_size"
+        android:id="@+id/menedjer_b"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignLeft="@+id/inf_b"
+        android:layout_alignStart="@+id/inf_b" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:layout_below="@+id/menedjer_b"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView5" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/matem"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/txt_menu_size"
+        android:id="@+id/matem_b"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignRight="@+id/inf_b"
+        android:layout_alignEnd="@+id/inf_b" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:layout_below="@+id/matem_b"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView6" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/finans"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/txt_menu_size"
+        android:layout_below="@+id/imageView6"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/finans_credit_b" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:layout_below="@+id/finans_credit_b"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+
+</RelativeLayout>
