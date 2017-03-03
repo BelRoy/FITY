@@ -1,46 +1,76 @@
 package com.devqt.fity.days_b.pn_b;
 
 
+import android.app.ProgressDialog;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.devqt.fity.R;
-import com.firebase.client.DataSnapshot;
-import com.firebase.client.Firebase;
-import com.firebase.client.FirebaseError;
-import com.firebase.client.ValueEventListener;
 
-public class PnBFirstInf extends AppCompatActivity{
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
+
+public class PnBFirstInf extends AppCompatActivity {
+
+    String _URL = "http://fity-rozklad.adr.com.ua/inf-f-poned.html";
+    TextView textView;
 
 
-    TextView frst_b_inf_para;
-    Firebase mRef;
-
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ponedelnik_inf_fcr);
-        Firebase.setAndroidContext(this);
-
-
-        frst_b_inf_para = (TextView) findViewById(R.id.frst_b_inf_para);
-        mRef = new Firebase("https://fity-4c21f.firebaseio.com/para/first_p");
-        mRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                String first_p = (String) dataSnapshot.getValue();
-                frst_b_inf_para.setText(first_p);
-
-            }
-
-            @Override
-            public void onCancelled(FirebaseError firebaseError) {
-
-            }
-        });
-
-
+        textView = (TextView)findViewById(R.id.numbers);
+        new _JSOUP().execute();
     }
 
-}
+
+        public class _JSOUP extends AsyncTask<Void, Void, Void> {
+
+            ProgressDialog dialog;
+            String PARA = "";
+
+
+            @Override
+            protected void onPreExecute() {
+                super.onPreExecute();
+                dialog = new ProgressDialog(PnBFirstInf.this);
+                dialog.setMessage("Loading...");
+                dialog.show();
+            }
+
+
+            @Override
+            protected Void doInBackground(Void... params) {
+                try {
+
+                    Document document = Jsoup.connect(_URL).get();
+                    Elements elements = document.select("td.s0");
+                    for (int i=0;i<elements.size();i++) {
+                        PARA += "\n" + elements.get(i).text();
+                    }
+
+
+                } catch (Exception e) {
+
+
+                }
+                return null;
+            }
+
+
+                @Override
+                protected void onPostExecute (Void result){
+                    super.onPostExecute(result);
+                    dialog.dismiss();
+                    textView.setText("" + PARA);
+                }
+            }
+
+
+        }
+
+
