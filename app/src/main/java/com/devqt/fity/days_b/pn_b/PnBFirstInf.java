@@ -63,7 +63,6 @@ public class PnBFirstInf extends AppCompatActivity {
 
                 } catch (Exception e) {
 
-
                 }
                 return null;
             }
