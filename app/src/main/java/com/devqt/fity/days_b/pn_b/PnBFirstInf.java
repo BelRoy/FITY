@@ -16,7 +16,7 @@ import org.jsoup.select.Elements;
 public class PnBFirstInf extends AppCompatActivity {
 
     String _URL = "http://fity-rozklad.adr.com.ua/inf-f-poned.html";
-    TextView textView;
+    TextView textView, names_para;
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,7 @@ public class PnBFirstInf extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ponedelnik_inf_fcr);
         textView = (TextView)findViewById(R.id.numbers);
+        names_para = (TextView)findViewById(R.id.names_p);
         new _JSOUP().execute();
     }
 
@@ -32,6 +33,7 @@ public class PnBFirstInf extends AppCompatActivity {
 
             ProgressDialog dialog;
             String PARA = "";
+            String NAME = "";
 
 
             @Override
@@ -49,8 +51,13 @@ public class PnBFirstInf extends AppCompatActivity {
 
                     Document document = Jsoup.connect(_URL).get();
                     Elements elements = document.select("td.s0");
-                    for (int i=0;i<elements.size();i++) {
+                    for (int i=0; i<elements.size(); i++) {
                         PARA += "\n" + elements.get(i).text();
+                    }
+
+                    Elements elements2 = document.select("td.s1");
+                    for (int i=0; i<elements2.size(); i++) {
+                        NAME += "\n" + elements2.get(i).text();
                     }
 
 
@@ -67,6 +74,7 @@ public class PnBFirstInf extends AppCompatActivity {
                     super.onPostExecute(result);
                     dialog.dismiss();
                     textView.setText("" + PARA);
+                    names_para.setText("" + NAME);
                 }
             }
 
