@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.devqt.fity.R;
+import com.devqt.fity.days_b.informat_b_f.ChtBFirstInf;
 import com.devqt.fity.days_b.informat_b_f.PnBFirstInf;
 import com.devqt.fity.days_b.informat_b_f.SrBFirstInf;
 import com.devqt.fity.days_b.informat_b_f.VtBFirstInf;
@@ -36,6 +37,12 @@ public class DayInfB extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(DayInfB.this, SrBFirstInf.class));
+            }
+        });
+        findViewById(R.id.cht).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DayInfB.this, ChtBFirstInf.class));
             }
         });
 
