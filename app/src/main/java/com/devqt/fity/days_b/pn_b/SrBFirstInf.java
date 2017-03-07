@@ -15,7 +15,7 @@ import org.jsoup.select.Elements;
 
 public class SrBFirstInf extends AppCompatActivity {
 
-    String _URL = "http://fity-rozklad.adr.com.ua/inf-f-poned.html";
+    String _URL = "http://fity-rozklad.adr.com.ua/inf-f-srd.html";
     TextView textView, names_para;
 
 
