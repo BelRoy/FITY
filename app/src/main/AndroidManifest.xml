@@ -49,9 +49,9 @@
 
 
 
-        <activity android:name=".days_b.pn_b.PnBFirstInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.pn_b.VtBFirstInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.pn_b.SrBFirstInf" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.informat_b_f.PnBFirstInf" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.informat_b_f.VtBFirstInf" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.informat_b_f.SrBFirstInf" android:screenOrientation="portrait"/>
 
     </application>
 

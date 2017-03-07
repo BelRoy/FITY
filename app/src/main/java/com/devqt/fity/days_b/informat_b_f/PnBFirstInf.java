@@ -1,4 +1,4 @@
-package com.devqt.fity.days_b.pn_b;
+package com.devqt.fity.days_b.informat_b_f;
 
 
 import android.app.ProgressDialog;

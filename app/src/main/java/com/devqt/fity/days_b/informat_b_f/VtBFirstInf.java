@@ -1,4 +1,4 @@
-package com.devqt.fity.days_b.pn_b;
+package com.devqt.fity.days_b.informat_b_f;
 
 
 import android.app.ProgressDialog;
@@ -13,19 +13,20 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
-public class SrBFirstInf extends AppCompatActivity {
+public class VtBFirstInf extends AppCompatActivity {
 
-    String _URL = "http://fity-rozklad.adr.com.ua/inf-f-srd.html";
+    String _URL = "http://fity-rozklad.adr.com.ua/inf-f-vivt.html";
     TextView textView, names_para;
 
 
-   protected void onCreate(Bundle savedInstanceState){
-       super.onCreate(savedInstanceState);
-       setContentView(R.layout.sreda_inf_fcr);
-       textView = (TextView)findViewById(R.id.numbers);
-       names_para = (TextView)findViewById(R.id.names_p);
-       new _JSOUP().execute();
-   }
+    protected void onCreate(Bundle savedInstanceState) {
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.vtornik_inf_fcr);
+        textView = (TextView)findViewById(R.id.numbers);
+        names_para = (TextView)findViewById(R.id.names_p);
+        new _JSOUP().execute();
+    }
 
 
     public class _JSOUP extends AsyncTask<Void, Void, Void> {
@@ -38,7 +39,7 @@ public class SrBFirstInf extends AppCompatActivity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            dialog = new ProgressDialog(SrBFirstInf.this);
+            dialog = new ProgressDialog(VtBFirstInf.this);
             dialog.setMessage("Loading...");
             dialog.show();
         }
