@@ -9,6 +9,8 @@ import android.view.View;
 import com.devqt.fity.R;
 import com.devqt.fity.days_b.informat_b_f.ChtBFirstInf;
 import com.devqt.fity.days_b.informat_b_f.PnBFirstInf;
+import com.devqt.fity.days_b.informat_b_f.PtBFirstInf;
+import com.devqt.fity.days_b.informat_b_f.SbtBFirstInf;
 import com.devqt.fity.days_b.informat_b_f.SrBFirstInf;
 import com.devqt.fity.days_b.informat_b_f.VtBFirstInf;
 
@@ -45,6 +47,17 @@ public class DayInfB extends AppCompatActivity {
                 startActivity(new Intent(DayInfB.this, ChtBFirstInf.class));
             }
         });
-
+        findViewById(R.id.ptn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DayInfB.this, PtBFirstInf.class));
+            }
+        });
+        findViewById(R.id.sbt).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DayInfB.this, SbtBFirstInf.class));
+            }
+        });
     }
 }
