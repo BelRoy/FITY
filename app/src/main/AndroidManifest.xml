@@ -45,6 +45,7 @@
         <activity android:name=".course_m.MenedjmentM" android:screenOrientation="portrait"/>
 
         <activity android:name=".days_b.DayInfB" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.DayInfSC" android:screenOrientation="portrait"/>
 
 
 
@@ -55,6 +56,14 @@
         <activity android:name=".days_b.informat_b_f.ChtBFirstInf" android:screenOrientation="portrait"/>
         <activity android:name=".days_b.informat_b_f.PtBFirstInf" android:screenOrientation="portrait"/>
         <activity android:name=".days_b.informat_b_f.SbtBFirstInf" android:screenOrientation="portrait"/>
+
+        <activity android:name=".days_b.informat_b_s.PnBSecondInf" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.informat_b_s.VtBSecondInf" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.informat_b_s.SrBSecondInf" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.informat_b_s.ChtBSecondInf" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.informat_b_s.PtBSecondInf" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.informat_b_s.SbtBSecondInf" android:screenOrientation="portrait"/>
+
 
 
 
