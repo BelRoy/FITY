@@ -50,8 +50,6 @@
         <activity android:name=".days_b.DayInfFo" android:screenOrientation="portrait"/>
 
 
-
-
         <activity android:name=".days_b.informat_b_f.PnBFirstInf" android:screenOrientation="portrait"/>
         <activity android:name=".days_b.informat_b_f.VtBFirstInf" android:screenOrientation="portrait"/>
         <activity android:name=".days_b.informat_b_f.SrBFirstInf" android:screenOrientation="portrait"/>
@@ -80,6 +78,16 @@
         <activity android:name=".days_b.informat_b_fo.PtBFourthInf" android:screenOrientation="portrait"/>
         <activity android:name=".days_b.informat_b_fo.SbtBFourthInf" android:screenOrientation="portrait"/>
 
+
+        <activity android:name=".days_m.DayInfFv" android:screenOrientation="portrait"/>
+
+
+        <activity android:name=".days_m.informat_m_fv.PnMFiveInf" android:screenOrientation="portrait"/>
+        <activity android:name=".days_m.informat_m_fv.VtMFiveInf" android:screenOrientation="portrait"/>
+        <activity android:name=".days_m.informat_m_fv.SrMFiveInf" android:screenOrientation="portrait"/>
+        <activity android:name=".days_m.informat_m_fv.ChtMFiveInf" android:screenOrientation="portrait"/>
+        <activity android:name=".days_m.informat_m_fv.PtMFiveInf" android:screenOrientation="portrait"/>
+        <activity android:name=".days_m.informat_m_fv.SbtMFiveInf" android:screenOrientation="portrait"/>
 
 
 
