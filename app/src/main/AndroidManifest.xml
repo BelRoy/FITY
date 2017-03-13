@@ -80,6 +80,7 @@
 
 
         <activity android:name=".days_m.DayInfFv" android:screenOrientation="portrait"/>
+        <activity android:name=".days_m.DayInfSx" android:screenOrientation="portrait"/>
 
 
         <activity android:name=".days_m.informat_m_fv.PnMFiveInf" android:screenOrientation="portrait"/>
@@ -88,6 +89,13 @@
         <activity android:name=".days_m.informat_m_fv.ChtMFiveInf" android:screenOrientation="portrait"/>
         <activity android:name=".days_m.informat_m_fv.PtMFiveInf" android:screenOrientation="portrait"/>
         <activity android:name=".days_m.informat_m_fv.SbtMFiveInf" android:screenOrientation="portrait"/>
+
+        <activity android:name=".days_m.informat_m_sx.PnMSixInf" android:screenOrientation="portrait"/>
+        <activity android:name=".days_m.informat_m_sx.VtMSixInf" android:screenOrientation="portrait"/>
+        <activity android:name=".days_m.informat_m_sx.SrMSixInf" android:screenOrientation="portrait"/>
+        <activity android:name=".days_m.informat_m_sx.ChtMSixInf" android:screenOrientation="portrait"/>
+        <activity android:name=".days_m.informat_m_sx.PtMSixInf" android:screenOrientation="portrait"/>
+        <activity android:name=".days_m.informat_m_sx.SbtMSixInf" android:screenOrientation="portrait"/>
 
 
 

@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.devqt.fity.R;
 import com.devqt.fity.days_m.DayInfFv;
+import com.devqt.fity.days_m.DayInfSx;
 
 
 public class InformaticM extends AppCompatActivity {
@@ -21,6 +22,13 @@ public class InformaticM extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(InformaticM.this, DayInfFv.class));
+            }
+        });
+
+        findViewById(R.id.six_cr).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(InformaticM.this, DayInfSx.class));
             }
         });
     }
