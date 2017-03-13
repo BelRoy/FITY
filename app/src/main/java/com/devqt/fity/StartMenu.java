@@ -8,15 +8,10 @@ import android.view.View;
 
 public class StartMenu extends AppCompatActivity {
 
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.start_menu);
-
 
 
 
@@ -33,8 +28,8 @@ public class StartMenu extends AppCompatActivity {
                 }
             });
 
-        }
 
-
+        findViewById(R.id.calendar_view);
 
     }
+}
