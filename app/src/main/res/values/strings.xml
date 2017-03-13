@@ -29,6 +29,13 @@
     <string name="chetverg">Четвер</string>
     <string name="pyatnica">Пятниця</string>
     <string name="subt">Субота</string>
+    <string name="sun">Нд</string>
+    <string name="mon">Пн</string>
+    <string name="tue">Вт</string>
+    <string name="wed">Ср</string>
+    <string name="thu">Чт</string>
+    <string name="fri">Пт</string>
+    <string name="sat">Сб</string>
 
 
 </resources>
