@@ -15,7 +15,7 @@ import org.jsoup.select.Elements;
 
 public class ChtMFiveInf extends AppCompatActivity {
 
-    String _URL = "http://fity-rozklad.adr.com.ua/inf-fv-chet.html";
+    String _URL = "https://docs.google.com/spreadsheets/d/1ok39U_T31E9nzqcb1IeyruKxcMzSTBsy2P2InRxFmK8/pubhtml?gid=2103773268&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false";
     TextView textView, names_para;
 
 

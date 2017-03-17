@@ -15,7 +15,7 @@ import org.jsoup.select.Elements;
 
 public class VtBThirdInf extends AppCompatActivity {
 
-    String _URL = "http://fity-rozklad.adr.com.ua/inf-t-vivt.html";
+    String _URL = "https://docs.google.com/spreadsheets/d/14nKM0ZGHfBOr1JDTu4mhAk7MWNsUTwMaLBeYpPXM-Z4/pubhtml?gid=1829916833&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false";
     TextView textView, names_para;
 
 

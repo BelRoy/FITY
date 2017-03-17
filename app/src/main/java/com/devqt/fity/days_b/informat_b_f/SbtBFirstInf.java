@@ -13,7 +13,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
 public class SbtBFirstInf extends AppCompatActivity {
-    String _URL = "http://fity-rozklad.adr.com.ua/inf-f-sbt.html";
+    String _URL = "https://docs.google.com/spreadsheets/d/1OqbRzIgMTgbeNTzBy1yvECNujBbputKtNBZG41R5JOI/pubhtml?gid=0&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false";
     TextView textView, names_para;
 
 

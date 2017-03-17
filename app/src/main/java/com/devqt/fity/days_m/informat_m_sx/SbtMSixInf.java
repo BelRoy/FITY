@@ -15,7 +15,7 @@ import org.jsoup.select.Elements;
 
 public class SbtMSixInf extends AppCompatActivity {
 
-    String _URL = "http://fity-rozklad.adr.com.ua/inf-sx-sbt.html";
+    String _URL = "https://docs.google.com/spreadsheets/d/11933s4kY-mmdRUTE3V1fGX9h78sJBnewUqJ9Te59FJU/pubhtml?gid=673698881&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false";
     TextView textView, names_para;
 
 

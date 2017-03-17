@@ -15,7 +15,7 @@ import org.jsoup.select.Elements;
 
 public class PtMSixInf extends AppCompatActivity {
 
-    String _URL = "http://fity-rozklad.adr.com.ua/inf-sx-pyat.html";
+    String _URL = "https://docs.google.com/spreadsheets/d/1jHK-8jAv4hGV36xNqIijMCSWJVjdd0EB0ySBn6vhGuQ/pubhtml?gid=1398299426&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false";
     TextView textView, names_para;
 
 

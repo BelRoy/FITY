@@ -15,7 +15,7 @@ import org.jsoup.select.Elements;
 
 public class PnBThirdInf extends AppCompatActivity {
 
-    String _URL = "http://fity-rozklad.adr.com.ua/inf-t-poned.html";
+    String _URL = "https://docs.google.com/spreadsheets/d/1HCQCKylFn6F4PnxhC0Bpjw_iX6nhK-fhC4mhNmyb2Fg/pubhtml?gid=1483833801&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false";
     TextView textView, names_para;
 
 

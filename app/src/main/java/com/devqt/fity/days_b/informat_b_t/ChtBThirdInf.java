@@ -15,7 +15,7 @@ import org.jsoup.select.Elements;
 
 public class ChtBThirdInf extends AppCompatActivity {
 
-    String _URL = "http://fity-rozklad.adr.com.ua/inf-t-chet.html";
+    String _URL = "https://docs.google.com/spreadsheets/d/1vIvt0rRuKpY9k5JpbI-itVodkeBphZEXRZlpvmsXmYM/pubhtml?gid=1585673238&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false";
     TextView textView, names_para;
 
 

@@ -15,7 +15,7 @@ import org.jsoup.select.Elements;
 
 public class ChtBFirstInf extends AppCompatActivity{
 
-    String _URL = "http://fity-rozklad.adr.com.ua/inf-f-chet.html";
+    String _URL = "https://docs.google.com/spreadsheets/d/1Q-AJIbIqWg1jOqtQLDELfXEx3Ktx5Drfk8SixDvykT4/pubhtml?gid=0&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false";
     TextView textView, names_para;
 
 

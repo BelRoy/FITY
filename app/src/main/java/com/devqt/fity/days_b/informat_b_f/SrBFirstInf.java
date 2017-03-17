@@ -15,7 +15,7 @@ import org.jsoup.select.Elements;
 
 public class SrBFirstInf extends AppCompatActivity {
 
-    String _URL = "http://fity-rozklad.adr.com.ua/inf-f-srd.html";
+    String _URL = "https://docs.google.com/spreadsheets/d/1YDcBYeTWq_JVgnNvCQ2CWUlPFw96URv9iNsZw_bxsUw/pubhtml?gid=0&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false";
     TextView textView, names_para;
 
 
