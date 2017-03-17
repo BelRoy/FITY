@@ -15,7 +15,7 @@ import org.jsoup.select.Elements;
 
 public class PnBFirstInf extends AppCompatActivity {
 
-    String _URL = "http://fity-rozklad.adr.com.ua/inf-f-poned.html";
+    String _URL = "https://docs.google.com/spreadsheets/d/1NemrdvOYqcJ2p9Wwq_ReMpbtUBy25t9vhl_svfznzME/pubhtml?gid=0&single=true&widget=false&headers=false&chrome=false";
     TextView textView, names_para;
 
 
@@ -66,6 +66,7 @@ public class PnBFirstInf extends AppCompatActivity {
 
                 }
                 return null;
+
             }
 
 
