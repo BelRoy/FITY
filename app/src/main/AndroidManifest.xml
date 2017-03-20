@@ -97,6 +97,58 @@
         <activity android:name=".days_m.informat_m_sx.PtMSixInf" android:screenOrientation="portrait"/>
         <activity android:name=".days_m.informat_m_sx.SbtMSixInf" android:screenOrientation="portrait"/>
 
+        <activity android:name=".days_b.DayMenejF" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.DayMenejSC" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.DayMenejTh" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.DayMenejFo" android:screenOrientation="portrait"/>
+
+        <activity android:name=".days_b.menej_b_f.PnBFirstMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.menej_b_f.VtBFirstMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.menej_b_f.SrBFirstMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.menej_b_f.ChtBFirstMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.menej_b_f.PtBFirstMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.menej_b_f.SbtBFirstMenej" android:screenOrientation="portrait"/>
+
+        <activity android:name=".days_b.menej_b_s.PnBSecondMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.menej_b_s.VtBSecondMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.menej_b_s.SrBSecondMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.menej_b_s.ChtBSecondMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.menej_b_s.PtBSecondMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.menej_b_s.SbtBSecondMenej" android:screenOrientation="portrait"/>
+
+        <activity android:name=".days_b.menej_b_t.PnBThirdMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.menej_b_t.VtBThirdMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.menej_b_t.SrBThirdMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.menej_b_t.ChtBThirdMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.menej_b_t.PtBThirdMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.menej_b_t.SbtBThirdMenej" android:screenOrientation="portrait"/>
+
+        <activity android:name=".days_b.menej_b_fo.PnBFourthMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.menej_b_fo.VtBFourthMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.menej_b_fo.SrBFourthMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.menej_b_fo.ChtBFourthMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.menej_b_fo.PtBFourthMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.menej_b_fo.SbtBFourthMenej" android:screenOrientation="portrait"/>
+
+        <activity android:name=".days_m.DayMenejFv" android:screenOrientation="portrait"/>
+        <activity android:name=".days_m.DayMenejSx" android:screenOrientation="portrait"/>
+
+
+        <activity android:name=".days_m.menej_m_fv.ChtMFiveMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_m.menej_m_fv.PnMFiveMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_m.menej_m_fv.VtMFiveMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_m.menej_m_fv.SrMFiveMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_m.menej_m_fv.PtMFiveMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_m.menej_m_fv.SbtMFiveMenej" android:screenOrientation="portrait"/>
+
+
+        <activity android:name=".days_m.menej_m_sx.PnMSixMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_m.menej_m_sx.VtMSixMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_m.menej_m_sx.SrMSixMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_m.menej_m_sx.ChtMSixMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_m.menej_m_sx.PtMSixMenej" android:screenOrientation="portrait"/>
+        <activity android:name=".days_m.menej_m_sx.SbtMSixMenej" android:screenOrientation="portrait"/>
+
 
 
     </application>
