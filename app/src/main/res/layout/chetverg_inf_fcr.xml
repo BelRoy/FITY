@@ -36,9 +36,9 @@
         android:layout_height="wrap_content"
         android:src="@drawable/upline"
         android:layout_alignTop="@+id/imageView23"
-        android:layout_alignRight="@+id/numbers"
-        android:layout_alignEnd="@+id/numbers"
-        android:id="@+id/imageView29" />
+        android:layout_toRightOf="@+id/numbers"
+        android:id="@+id/imageView29"
+        android:layout_toEndOf="@+id/numbers"/>
 
     <TextView
         android:layout_width="wrap_content"
