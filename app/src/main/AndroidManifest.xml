@@ -218,6 +218,40 @@
         <activity android:name=".days_m.mat_m_sx.PtMSixMat" android:screenOrientation="portrait"/>
         <activity android:name=".days_m.mat_m_sx.SbtMSixMat" android:screenOrientation="portrait"/>
 
+        <activity android:name=".days_b.DayMatB" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.DayMatSC" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.DayMatTh" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.DayMatFo" android:screenOrientation="portrait"/>
+
+        <activity android:name=".days_b.mat_b_f.PnBFirstMat" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.mat_b_f.VtBFirstMat" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.mat_b_f.SrBFirstMat" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.mat_b_f.ChtBFirstMat" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.mat_b_f.PtBFirstMat" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.mat_b_f.SbtBFirstMat" android:screenOrientation="portrait"/>
+
+        <activity android:name=".days_b.mat_b_s.PnBSecondMat" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.mat_b_s.VtBSecondMat" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.mat_b_s.SrBSecondMat" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.mat_b_s.ChtBSecondMat" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.mat_b_s.PtBSecondMat" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.mat_b_s.SbtBSecondMat" android:screenOrientation="portrait"/>
+
+        <activity android:name=".days_b.mat_b_t.PnBThirdMat" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.mat_b_t.VtBThirdMat" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.mat_b_t.SrBThirdMat" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.mat_b_t.ChtBThirdMat" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.mat_b_t.PtBThirdMat" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.mat_b_t.SbtBThirdMat" android:screenOrientation="portrait"/>
+
+        <activity android:name=".days_b.mat_b_fo.PnBFourthMat" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.mat_b_fo.VtBFourthMat" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.mat_b_fo.SrBFourthMat" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.mat_b_fo.ChtBFourthMat" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.mat_b_fo.PtBFourthMat" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.mat_b_fo.SbtBFourthMat" android:screenOrientation="portrait"/>
+
+
 
 
     </application>
