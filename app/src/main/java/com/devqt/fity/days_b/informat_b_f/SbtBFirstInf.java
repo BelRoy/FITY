@@ -14,7 +14,7 @@ import org.jsoup.select.Elements;
 
 public class SbtBFirstInf extends AppCompatActivity {
     String _URL = "https://docs.google.com/spreadsheets/d/1OqbRzIgMTgbeNTzBy1yvECNujBbputKtNBZG41R5JOI/pubhtml?gid=0&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false";
-    TextView textView, names_para;
+    TextView textView, names_para, name_2, name_para_2;
 
 
     protected void onCreate(Bundle savedInstanceState){
@@ -22,6 +22,8 @@ public class SbtBFirstInf extends AppCompatActivity {
         setContentView(R.layout.subota_inf_fcr);
         textView = (TextView)findViewById(R.id.numbers);
         names_para = (TextView)findViewById(R.id.names_p);
+        name_2 = (TextView)findViewById(R.id.name_2);
+        name_para_2 = (TextView)findViewById(R.id.name_para_2);
         new _JSOUP().execute();
     }
 
@@ -31,6 +33,8 @@ public class SbtBFirstInf extends AppCompatActivity {
         ProgressDialog dialog;
         String PARA = "";
         String NAME = "";
+        String PARA_S = "";
+        String NAME_S = "";
 
 
         @Override
@@ -57,12 +61,22 @@ public class SbtBFirstInf extends AppCompatActivity {
                     NAME += "\n" + elements2.get(i).text();
                 }
 
+                Elements elements3 = document.select("td.s3");
+                for (int i=0; i<elements3.size(); i++) {
+                    PARA_S += "\n" + elements3.get(i).text();
+                }
 
+                Elements elements4 = document.select("td.s4");
+                for (int i=0; i<elements4.size(); i++) {
+                    NAME_S += "\n" + elements4.get(i).text();
+
+                }
             }
             catch (Exception e) {
 
             }
             return null;
+
         }
 
 
@@ -72,6 +86,8 @@ public class SbtBFirstInf extends AppCompatActivity {
             dialog.dismiss();
             textView.setText("" + PARA);
             names_para.setText("" + NAME);
+            name_2.setText("" + PARA_S);
+            name_para_2.setText("" + NAME_S);
         }
     }
 

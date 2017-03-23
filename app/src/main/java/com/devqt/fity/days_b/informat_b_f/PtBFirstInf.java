@@ -16,7 +16,7 @@ import org.jsoup.select.Elements;
 public class PtBFirstInf extends AppCompatActivity {
 
     String _URL = "https://docs.google.com/spreadsheets/d/15VLJS7RBVpRjsbDsAhMj0PYRjfkUBEW-9-j_XPq1wCk/pubhtml?gid=0&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false";
-    TextView textView, names_para;
+    TextView textView, names_para, name_2, name_para_2;
 
 
     protected void onCreate(Bundle savedInstanceState){
@@ -24,6 +24,8 @@ public class PtBFirstInf extends AppCompatActivity {
         setContentView(R.layout.pyatnica_inf_fcr);
         textView = (TextView)findViewById(R.id.numbers);
         names_para = (TextView)findViewById(R.id.names_p);
+        name_2 = (TextView)findViewById(R.id.name_2);
+        name_para_2 = (TextView)findViewById(R.id.name_para_2);
         new _JSOUP().execute();
     }
 
@@ -33,6 +35,8 @@ public class PtBFirstInf extends AppCompatActivity {
         ProgressDialog dialog;
         String PARA = "";
         String NAME = "";
+        String PARA_S = "";
+        String NAME_S = "";
 
 
         @Override
@@ -60,11 +64,22 @@ public class PtBFirstInf extends AppCompatActivity {
                 }
 
 
+                Elements elements3 = document.select("td.s3");
+                for (int i=0; i<elements3.size(); i++) {
+                    PARA_S += "\n" + elements3.get(i).text();
+                }
+
+                Elements elements4 = document.select("td.s4");
+                for (int i=0; i<elements4.size(); i++) {
+                    NAME_S += "\n" + elements4.get(i).text();
+
+                }
             }
             catch (Exception e) {
 
             }
             return null;
+
         }
 
 
@@ -74,6 +89,8 @@ public class PtBFirstInf extends AppCompatActivity {
             dialog.dismiss();
             textView.setText("" + PARA);
             names_para.setText("" + NAME);
+            name_2.setText("" + PARA_S);
+            name_para_2.setText("" + NAME_S);
         }
     }
 

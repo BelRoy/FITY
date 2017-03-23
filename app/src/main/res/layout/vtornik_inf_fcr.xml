@@ -36,7 +36,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textColor="@color/text_color"
-        android:layout_marginLeft="25dp" />
+        android:layout_marginLeft="10dp" />
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,11 +54,71 @@
         android:id="@+id/names_p"
         android:layout_gravity="right"
         android:layout_below="@+id/iline"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:textColor="@color/text_color"
         android:layout_alignBottom="@+id/numbers"
         android:layout_toRightOf="@+id/imageView28"
-        android:layout_toEndOf="@+id/imageView28"
-        android:layout_marginLeft="10dp" />
+        android:layout_marginLeft="10dp"
+        android:layout_alignRight="@+id/imageView33"
+        android:layout_alignEnd="@+id/imageView33" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/upline"
+        android:layout_below="@+id/vivtorok"
+        android:layout_alignLeft="@+id/vivtorok"
+        android:layout_alignStart="@+id/vivtorok"
+        android:id="@+id/imageView33" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/para_name_2"
+        android:layout_alignTop="@+id/names_p"
+        android:layout_toRightOf="@+id/imageView33"
+        android:layout_toEndOf="@+id/imageView33"
+        android:textColor="@color/text_color" />
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/upline"
+    android:layout_alignTop="@+id/iline"
+    android:layout_toRightOf="@+id/vivtorok"
+    android:layout_toEndOf="@+id/vivtorok"
+    android:id="@+id/imageView34" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/name_para_2"
+        android:layout_alignTop="@+id/para_name_2"
+        android:layout_toRightOf="@+id/imageView34"
+        android:layout_toEndOf="@+id/imageView34"
+        android:textColor="@color/text_color" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/f_g"
+        android:id="@+id/textView8"
+        android:layout_above="@+id/iline"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/s_g"
+        android:id="@+id/textView9"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/red" />
 </RelativeLayout>
