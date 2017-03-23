@@ -18,7 +18,6 @@ public class PnBFirstInf extends AppCompatActivity {
     String _URL = "https://docs.google.com/spreadsheets/d/1NemrdvOYqcJ2p9Wwq_ReMpbtUBy25t9vhl_svfznzME/pubhtml?gid=0&single=true&widget=false&headers=false&chrome=false";
     TextView textView, names_para, name_2, name_para_2;
 
-
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
