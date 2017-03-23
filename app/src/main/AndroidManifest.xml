@@ -251,7 +251,38 @@
         <activity android:name=".days_b.mat_b_fo.PtBFourthMat" android:screenOrientation="portrait"/>
         <activity android:name=".days_b.mat_b_fo.SbtBFourthMat" android:screenOrientation="portrait"/>
 
+        <activity android:name=".days_b.DayFiKF" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.DayFiKSC" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.DayFiKTh" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.DayFiKFo" android:screenOrientation="portrait"/>
 
+        <activity android:name=".days_b.fik_b_f.PnBFirstFiK" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.fik_b_f.VtBFirstFiK" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.fik_b_f.SrBFirstFiK" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.fik_b_f.ChtBFirstFiK" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.fik_b_f.PtBFirstFiK" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.fik_b_f.SbtBFirstFiK" android:screenOrientation="portrait"/>
+
+        <activity android:name=".days_b.fik_b_s.PnBSecondFiK" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.fik_b_s.VtBSecondFiK" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.fik_b_s.SrBSecondFiK" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.fik_b_s.ChtBSecondFiK" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.fik_b_s.PtBSecondFiK" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.fik_b_s.SbtBSecondFiK" android:screenOrientation="portrait"/>
+
+        <activity android:name=".days_b.fik_b_t.PnBThirdFiK" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.fik_b_t.VtBThirdFiK" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.fik_b_t.SrBThirdFiK" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.fik_b_t.ChtBThirdFiK" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.fik_b_t.PtBThirdFiK" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.fik_b_t.SbtBThirdFiK" android:screenOrientation="portrait"/>
+
+        <activity android:name=".days_b.fik_b_fo.PnBFourthFiK" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.fik_b_fo.VtBFourthFiK" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.fik_b_fo.SrBFourthFiK" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.fik_b_fo.ChtBFourthFiK" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.fik_b_fo.PtBFourthFiK" android:screenOrientation="portrait"/>
+        <activity android:name=".days_b.fik_b_fo.SbtBFourthFiK" android:screenOrientation="portrait"/>
 
 
     </application>

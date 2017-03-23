@@ -1,5 +1,4 @@
-package com.devqt.fity.days_b.mat_b_f;
-
+package com.devqt.fity.days_b.fik_b_t;
 
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
@@ -13,15 +12,17 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
-public class PtBFirstMat extends AppCompatActivity {
 
-    String _URL = "https://docs.google.com/spreadsheets/d/1Q85VJr8qLuBEvQvZioy1dZnDZvHu8Gi1JpQ6dVuigvA/pubhtml?gid=1540391028&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false";
+public class ChtBThirdFiK extends AppCompatActivity {
+
+    String _URL = "https://docs.google.com/spreadsheets/d/1hUUCWMsJeNKI5tXdblJ7tzO21jUdUItsMs8E64NcPqU/pubhtml?gid=1041737208&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false";
     TextView textView, names_para;
 
 
     protected void onCreate(Bundle savedInstanceState){
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.pyatnica_inf_fcr);
+        setContentView(R.layout.chetverg_inf_fcr);
         textView = (TextView)findViewById(R.id.numbers);
         names_para = (TextView)findViewById(R.id.names_p);
         new _JSOUP().execute();
@@ -38,7 +39,7 @@ public class PtBFirstMat extends AppCompatActivity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            dialog = new ProgressDialog(PtBFirstMat.this);
+            dialog = new ProgressDialog(ChtBThirdFiK.this);
             dialog.setMessage("Loading...");
             dialog.show();
         }
