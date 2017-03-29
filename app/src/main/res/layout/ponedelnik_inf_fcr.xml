@@ -21,105 +21,124 @@
         android:layout_alignParentStart="true"
         android:id="@+id/imageView21" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/numbers"
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabHost"
         android:layout_below="@+id/imageView21"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="@dimen/txt_days"
-        android:layout_marginLeft="10dp"
-        android:textColor="@color/text_color"/>
+        android:layout_alignRight="@+id/line"
+        android:layout_alignEnd="@+id/line">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/upline"
-        android:layout_toEndOf="@+id/numbers"
-        android:layout_alignTop="@+id/imageView21"
-        android:layout_toRightOf="@+id/numbers"
-        android:id="@+id/imageView25" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/names_p"
-        android:textSize="@dimen/txt_days"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/imageView21"
-        android:layout_toRightOf="@+id/numbers"
-        android:layout_toEndOf="@+id/numbers"
-        android:layout_alignBottom="@+id/numbers"
-        android:layout_marginLeft="10dp"
-        android:textColor="@color/text_color"/>
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView39"
-        android:src="@drawable/upline"
-        android:layout_below="@+id/textView2"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2" />
+            </TabWidget>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/name_2"
-        android:layout_below="@+id/imageView21"
-        android:layout_toRightOf="@+id/imageView39"
-        android:layout_toEndOf="@+id/imageView39"
-        android:textColor="@color/text_color" />
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView40"
-        android:src="@drawable/upline"
-        android:layout_alignTop="@+id/names_p"
-        android:layout_toRightOf="@+id/name_2"
-        android:layout_toEndOf="@+id/name_2" />
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/name_para_2"
-        android:layout_alignTop="@+id/names_p"
-        android:layout_toRightOf="@+id/imageView40"
-        android:layout_toEndOf="@+id/imageView40"
-        android:textColor="@color/text_color" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/numbers"
+                        android:layout_below="@+id/imageView21"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignBaseline="@id/names_p"
+                        android:textSize="@dimen/txt_days"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/text_color"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/upline"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/f_g"
-        android:id="@+id/textView14"
-        android:layout_above="@+id/imageView21"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textColor="@color/red" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/names_p"
+                        android:textSize="@dimen/txt_days"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/imageView21"
+                        android:layout_toRightOf="@+id/numbers"
+                        android:layout_toEndOf="@+id/numbers"
+                        android:layout_alignBottom="@+id/numbers"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="right" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/s_g"
-        android:id="@+id/textView15"
-        android:textColor="@color/red"
-        android:layout_above="@+id/imageView21"
-        android:layout_alignRight="@+id/names_p"
-        android:layout_alignEnd="@+id/names_p" />
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/name_2"
+                        android:layout_below="@+id/imageView21"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textSize="@dimen/txt_days"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/text_color" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/upline"
+                        android:id="@+id/imageView25" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/name_para_2"
+                        android:textSize="@dimen/txt_days"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/imageView21"
+                        android:layout_toRightOf="@+id/numbers"
+                        android:layout_toEndOf="@+id/numbers"
+                        android:layout_alignBottom="@+id/numbers"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="right" />
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
 
 
 </RelativeLayout>

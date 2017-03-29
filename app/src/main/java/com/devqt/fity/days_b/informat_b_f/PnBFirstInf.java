@@ -5,6 +5,7 @@ import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.TabHost;
 import android.widget.TextView;
 
 import com.devqt.fity.R;
@@ -27,6 +28,24 @@ public class PnBFirstInf extends AppCompatActivity {
         name_2 = (TextView)findViewById(R.id.name_2);
         name_para_2 = (TextView)findViewById(R.id.name_para_2);
         new _JSOUP().execute();
+
+        TabHost tabHost = (TabHost) findViewById(R.id.tabHost);
+
+        tabHost.setup();
+
+        TabHost.TabSpec tabSpec = tabHost.newTabSpec("tag1");
+        TabHost.TabSpec tabSpec1 = tabHost.newTabSpec("tag2");
+
+        tabSpec.setContent(R.id.tab1);
+        tabSpec.setIndicator("1 група");
+        tabHost.addTab(tabSpec);
+
+        tabSpec = tabHost.newTabSpec("tag2");
+        tabSpec.setContent(R.id.tab2);
+        tabSpec.setIndicator("2 група");
+        tabHost.addTab(tabSpec);
+
+        tabHost.setCurrentTab(0);
     }
 
 
