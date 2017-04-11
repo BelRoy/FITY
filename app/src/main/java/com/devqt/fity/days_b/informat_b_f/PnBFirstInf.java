@@ -16,6 +16,8 @@ import org.jsoup.select.Elements;
 
 public class PnBFirstInf extends AppCompatActivity {
 
+    TabHost host;
+
     String _URL = "https://docs.google.com/spreadsheets/d/1NemrdvOYqcJ2p9Wwq_ReMpbtUBy25t9vhl_svfznzME/pubhtml?gid=0&single=true&widget=false&headers=false&chrome=false";
     TextView textView, names_para, name_2, name_para_2;
 
@@ -33,19 +35,18 @@ public class PnBFirstInf extends AppCompatActivity {
 
         tabHost.setup();
 
-        TabHost.TabSpec tabSpec = tabHost.newTabSpec("tag1");
-        TabHost.TabSpec tabSpec1 = tabHost.newTabSpec("tag2");
 
-        tabSpec.setContent(R.id.tab1);
-        tabSpec.setIndicator("1 група");
-        tabHost.addTab(tabSpec);
 
-        tabSpec = tabHost.newTabSpec("tag2");
-        tabSpec.setContent(R.id.tab2);
-        tabSpec.setIndicator("2 група");
-        tabHost.addTab(tabSpec);
 
-        tabHost.setCurrentTab(0);
+        TabHost.TabSpec spec = host.newTabSpec("1 група");
+        spec.setContent(R.id.tab1);
+        spec.setIndicator("1 група");
+        host.addTab(spec);
+
+        spec = host.newTabSpec("2 група");
+        spec.setContent(R.id.tab2);
+        spec.setIndicator("2 група");
+        host.addTab(spec);
     }
 
 
