@@ -1,119 +1,43 @@
 package com.devqt.fity.days_b.informat_b_f;
 
 
-import android.app.ProgressDialog;
-import android.os.AsyncTask;
+import android.app.TabActivity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.TabHost;
-import android.widget.TextView;
 
 import com.devqt.fity.R;
+import com.devqt.fity.fragments_b.FirstGroupInfBF;
+import com.devqt.fity.fragments_b.SecondGroupInfBF;
 
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.select.Elements;
+public class PnBFirstInf extends TabActivity {
 
-public class PnBFirstInf extends AppCompatActivity {
-
-    TabHost host;
-
-    String _URL = "https://docs.google.com/spreadsheets/d/1NemrdvOYqcJ2p9Wwq_ReMpbtUBy25t9vhl_svfznzME/pubhtml?gid=0&single=true&widget=false&headers=false&chrome=false";
-    TextView textView, names_para, name_2, name_para_2;
 
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ponedelnik_inf_fcr);
-        textView = (TextView)findViewById(R.id.numbers);
-        names_para = (TextView)findViewById(R.id.names_p);
-        name_2 = (TextView)findViewById(R.id.name_2);
-        name_para_2 = (TextView)findViewById(R.id.name_para_2);
-        new _JSOUP().execute();
-
-        TabHost tabHost = (TabHost) findViewById(R.id.tabHost);
-
-        tabHost.setup();
+        TabHost tabHost = getTabHost();
 
 
+        TabHost.TabSpec fgroupspec = tabHost.newTabSpec("1 група");
+        fgroupspec.setIndicator("1 група");
+        Intent fgroupsIntent = new Intent(this,FirstGroupInfBF.class);
+        fgroupspec.setContent(fgroupsIntent);
 
 
-        TabHost.TabSpec spec = host.newTabSpec("1 група");
-        spec.setContent(R.id.tab1);
-        spec.setIndicator("1 група");
-        host.addTab(spec);
+        TabHost.TabSpec sgroupspec = tabHost.newTabSpec("2 група");
+        sgroupspec.setIndicator("2 група");
+        Intent sgroupsIntent = new Intent(this,SecondGroupInfBF.class);
+        sgroupspec.setContent(sgroupsIntent);
 
-        spec = host.newTabSpec("2 група");
-        spec.setContent(R.id.tab2);
-        spec.setIndicator("2 група");
-        host.addTab(spec);
+        tabHost.addTab(fgroupspec);
+        tabHost.addTab(sgroupspec);
+
+
     }
 
 
-        public class _JSOUP extends AsyncTask<Void, Void, Void> {
-
-            ProgressDialog dialog;
-            String PARA = "";
-            String NAME = "";
-            String PARA_S = "";
-            String NAME_S = "";
-
-
-            @Override
-            protected void onPreExecute() {
-                super.onPreExecute();
-                dialog = new ProgressDialog(PnBFirstInf.this);
-                dialog.setMessage("Loading...");
-                dialog.show();
-            }
-
-
-            @Override
-            protected Void doInBackground(Void... params) {
-                try {
-
-                    Document document = Jsoup.connect(_URL).get();
-                    Elements elements = document.select("td.s0");
-                    for (int i=0; i<elements.size(); i++) {
-                        PARA += "\n" + elements.get(i).text();
-                    }
-
-                    Elements elements2 = document.select("td.s1");
-                    for (int i=0; i<elements2.size(); i++) {
-                        NAME += "\n" + elements2.get(i).text();
-                    }
-
-                    Elements elements3 = document.select("td.s3");
-                    for (int i=0; i<elements3.size(); i++) {
-                        PARA_S += "\n" + elements3.get(i).text();
-                    }
-
-                    Elements elements4 = document.select("td.s4");
-                    for (int i=0; i<elements4.size(); i++) {
-                        NAME_S += "\n" + elements4.get(i).text();
-
-                    }
-                }
-                catch (Exception e) {
-
-                }
-                return null;
-
-            }
-
-
-                @Override
-                protected void onPostExecute (Void result){
-                    super.onPostExecute(result);
-                    dialog.dismiss();
-                    textView.setText("" + PARA);
-                    names_para.setText("" + NAME);
-                    name_2.setText("" + PARA_S);
-                    name_para_2.setText("" + NAME_S);
-                }
-            }
-
-
-        }
+}
 
 

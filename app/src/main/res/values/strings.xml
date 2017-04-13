@@ -19,8 +19,6 @@
     <string name="dy">Державне управління</string>
 
 
-
-
     <string name="poned">Понеділок</string>
 
     <string name="days"> Оберіть день</string>
@@ -38,6 +36,9 @@
     <string name="sat">Сб</string>
     <string name="f_g">1 група</string>
     <string name="s_g">2 група</string>
+    <string name="title_activity_f__inf">F_Inf</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 
 
 </resources>

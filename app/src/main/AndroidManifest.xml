@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.devqt.fity">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_CALENDAR" />
     <uses-permission android:name="android.permission.WRITE_CALENDAR" />
 
@@ -25,266 +25,633 @@
         </activity>
         <activity
             android:name=".Bachelor"
+            android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
-            android:label="@string/app_name"/>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".Magistr"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"/>
-
-        <activity android:name=".course_b.FiKB" android:screenOrientation="portrait"/>
-        <activity android:name=".course_m.FiKM" android:screenOrientation="portrait"/>
-        <activity android:name=".course_b.InformaticB" android:screenOrientation="portrait"/>
-        <activity android:name=".course_m.InformaticM" android:screenOrientation="portrait"/>
-        <activity android:name=".course_m.SocInformaticM" android:screenOrientation="portrait"/>
-        <activity android:name=".course_m.DY" android:screenOrientation="portrait"/>
-        <activity android:name=".course_b.MatematicB" android:screenOrientation="portrait"/>
-        <activity android:name=".course_m.MatematicM" android:screenOrientation="portrait"/>
-        <activity android:name=".course_b.MenedjmentB" android:screenOrientation="portrait"/>
-        <activity android:name=".course_m.MenedjmentM" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_b.DayInfB" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.DayInfSC" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.DayInfTh" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.DayInfFo" android:screenOrientation="portrait"/>
-
-
-        <activity android:name=".days_b.informat_b_f.PnBFirstInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.informat_b_f.VtBFirstInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.informat_b_f.SrBFirstInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.informat_b_f.ChtBFirstInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.informat_b_f.PtBFirstInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.informat_b_f.SbtBFirstInf" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_b.informat_b_s.PnBSecondInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.informat_b_s.VtBSecondInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.informat_b_s.SrBSecondInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.informat_b_s.ChtBSecondInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.informat_b_s.PtBSecondInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.informat_b_s.SbtBSecondInf" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_b.informat_b_t.PnBThirdInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.informat_b_t.VtBThirdInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.informat_b_t.SrBThirdInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.informat_b_t.ChtBThirdInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.informat_b_t.PtBThirdInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.informat_b_t.SbtBThirdInf" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_b.informat_b_fo.PnBFourthInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.informat_b_fo.VtBFourthInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.informat_b_fo.SrBFourthInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.informat_b_fo.ChtBFourthInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.informat_b_fo.PtBFourthInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.informat_b_fo.SbtBFourthInf" android:screenOrientation="portrait"/>
-
-
-        <activity android:name=".days_m.DayInfFv" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.DayInfSx" android:screenOrientation="portrait"/>
-
-
-        <activity android:name=".days_m.informat_m_fv.PnMFiveInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.informat_m_fv.VtMFiveInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.informat_m_fv.SrMFiveInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.informat_m_fv.ChtMFiveInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.informat_m_fv.PtMFiveInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.informat_m_fv.SbtMFiveInf" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_m.informat_m_sx.PnMSixInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.informat_m_sx.VtMSixInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.informat_m_sx.SrMSixInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.informat_m_sx.ChtMSixInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.informat_m_sx.PtMSixInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.informat_m_sx.SbtMSixInf" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_b.DayMenejF" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.DayMenejSC" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.DayMenejTh" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.DayMenejFo" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_b.menej_b_f.PnBFirstMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.menej_b_f.VtBFirstMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.menej_b_f.SrBFirstMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.menej_b_f.ChtBFirstMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.menej_b_f.PtBFirstMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.menej_b_f.SbtBFirstMenej" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_b.menej_b_s.PnBSecondMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.menej_b_s.VtBSecondMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.menej_b_s.SrBSecondMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.menej_b_s.ChtBSecondMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.menej_b_s.PtBSecondMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.menej_b_s.SbtBSecondMenej" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_b.menej_b_t.PnBThirdMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.menej_b_t.VtBThirdMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.menej_b_t.SrBThirdMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.menej_b_t.ChtBThirdMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.menej_b_t.PtBThirdMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.menej_b_t.SbtBThirdMenej" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_b.menej_b_fo.PnBFourthMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.menej_b_fo.VtBFourthMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.menej_b_fo.SrBFourthMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.menej_b_fo.ChtBFourthMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.menej_b_fo.PtBFourthMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.menej_b_fo.SbtBFourthMenej" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_m.DayMenejFv" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.DayMenejSx" android:screenOrientation="portrait"/>
-
-
-        <activity android:name=".days_m.menej_m_fv.ChtMFiveMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.menej_m_fv.PnMFiveMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.menej_m_fv.VtMFiveMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.menej_m_fv.SrMFiveMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.menej_m_fv.PtMFiveMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.menej_m_fv.SbtMFiveMenej" android:screenOrientation="portrait"/>
-
-
-        <activity android:name=".days_m.menej_m_sx.PnMSixMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.menej_m_sx.VtMSixMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.menej_m_sx.SrMSixMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.menej_m_sx.ChtMSixMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.menej_m_sx.PtMSixMenej" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.menej_m_sx.SbtMSixMenej" android:screenOrientation="portrait"/>
-
-
-        <activity android:name=".days_m.DaySocInfFv" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.DaySocInfSx" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_m.soc_informat_m_fv.PnMFiveSocInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.soc_informat_m_fv.VtMFiveSocInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.soc_informat_m_fv.SrMFiveSocInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.soc_informat_m_fv.ChtMFiveSocInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.soc_informat_m_fv.PtMFiveSocInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.soc_informat_m_fv.SbtMFiveSocInf" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_m.soc_informat_m_sx.PnMSixSocInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.soc_informat_m_sx.VtMSixSocInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.soc_informat_m_sx.SrMSixSocInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.soc_informat_m_sx.ChtMSixSocInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.soc_informat_m_sx.PtMSixSocInf" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.soc_informat_m_sx.SbtMSixSocInf" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_m.DayDYFv" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.DayDYSx" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_m.dy_m_fv.PnMFiveDY" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.dy_m_fv.VtMFiveDY" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.dy_m_fv.SrMFiveDY" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.dy_m_fv.ChtMFiveDY" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.dy_m_fv.PtMFiveDY" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.dy_m_fv.SbtMFiveDY" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_m.dy_m_sx.PnMSixDY" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.dy_m_sx.VtMSixDY" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.dy_m_sx.SrMSixDY" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.dy_m_sx.ChtMSixDY" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.dy_m_sx.PtMSixDY" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.dy_m_sx.SbtMSixDY" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_m.DayFiKMFv" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.DayFiKMSx" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_m.fik_m_fv.PnMFiveFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.fik_m_fv.VtMFiveFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.fik_m_fv.SrMFiveFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.fik_m_fv.ChtMFiveFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.fik_m_fv.PtMFiveFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.fik_m_fv.SbtMFiveFiK" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_m.fik_m_sx.PnMSixFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.fik_m_sx.VtMSixFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.fik_m_sx.SrMSixFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.fik_m_sx.ChtMSixFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.fik_m_sx.PtMSixFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.fik_m_sx.SbtMSixFiK" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_m.DayMatMFv" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.DayMatMSx" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_m.mat_m_fv.PnMFiveMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.mat_m_fv.VtMFiveMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.mat_m_fv.SrMFiveMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.mat_m_fv.ChtMFiveMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.mat_m_fv.PtMFiveMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.mat_m_fv.SbtMFiveMat" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_m.mat_m_sx.PnMSixMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.mat_m_sx.VtMSixMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.mat_m_sx.SrMSixMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.mat_m_sx.ChtMSixMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.mat_m_sx.PtMSixMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_m.mat_m_sx.SbtMSixMat" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_b.DayMatB" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.DayMatSC" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.DayMatTh" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.DayMatFo" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_b.mat_b_f.PnBFirstMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.mat_b_f.VtBFirstMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.mat_b_f.SrBFirstMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.mat_b_f.ChtBFirstMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.mat_b_f.PtBFirstMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.mat_b_f.SbtBFirstMat" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_b.mat_b_s.PnBSecondMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.mat_b_s.VtBSecondMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.mat_b_s.SrBSecondMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.mat_b_s.ChtBSecondMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.mat_b_s.PtBSecondMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.mat_b_s.SbtBSecondMat" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_b.mat_b_t.PnBThirdMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.mat_b_t.VtBThirdMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.mat_b_t.SrBThirdMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.mat_b_t.ChtBThirdMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.mat_b_t.PtBThirdMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.mat_b_t.SbtBThirdMat" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_b.mat_b_fo.PnBFourthMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.mat_b_fo.VtBFourthMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.mat_b_fo.SrBFourthMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.mat_b_fo.ChtBFourthMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.mat_b_fo.PtBFourthMat" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.mat_b_fo.SbtBFourthMat" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_b.DayFiKF" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.DayFiKSC" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.DayFiKTh" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.DayFiKFo" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_b.fik_b_f.PnBFirstFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.fik_b_f.VtBFirstFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.fik_b_f.SrBFirstFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.fik_b_f.ChtBFirstFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.fik_b_f.PtBFirstFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.fik_b_f.SbtBFirstFiK" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_b.fik_b_s.PnBSecondFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.fik_b_s.VtBSecondFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.fik_b_s.SrBSecondFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.fik_b_s.ChtBSecondFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.fik_b_s.PtBSecondFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.fik_b_s.SbtBSecondFiK" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_b.fik_b_t.PnBThirdFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.fik_b_t.VtBThirdFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.fik_b_t.SrBThirdFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.fik_b_t.ChtBThirdFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.fik_b_t.PtBThirdFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.fik_b_t.SbtBThirdFiK" android:screenOrientation="portrait"/>
-
-        <activity android:name=".days_b.fik_b_fo.PnBFourthFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.fik_b_fo.VtBFourthFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.fik_b_fo.SrBFourthFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.fik_b_fo.ChtBFourthFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.fik_b_fo.PtBFourthFiK" android:screenOrientation="portrait"/>
-        <activity android:name=".days_b.fik_b_fo.SbtBFourthFiK" android:screenOrientation="portrait"/>
-
-
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".course_b.FiKB"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".course_m.FiKM"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".course_b.InformaticB"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".course_m.InformaticM"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".course_m.SocInformaticM"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".course_m.DY"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".course_b.MatematicB"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".course_m.MatematicM"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".course_b.MenedjmentB"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".course_m.MenedjmentM"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.DayInfB"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.DayInfSC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.DayInfTh"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.DayInfFo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.informat_b_f.PnBFirstInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.informat_b_f.VtBFirstInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.informat_b_f.SrBFirstInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.informat_b_f.ChtBFirstInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.informat_b_f.PtBFirstInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.informat_b_f.SbtBFirstInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.informat_b_s.PnBSecondInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.informat_b_s.VtBSecondInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.informat_b_s.SrBSecondInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.informat_b_s.ChtBSecondInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.informat_b_s.PtBSecondInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.informat_b_s.SbtBSecondInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.informat_b_t.PnBThirdInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.informat_b_t.VtBThirdInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.informat_b_t.SrBThirdInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.informat_b_t.ChtBThirdInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.informat_b_t.PtBThirdInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.informat_b_t.SbtBThirdInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.informat_b_fo.PnBFourthInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.informat_b_fo.VtBFourthInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.informat_b_fo.SrBFourthInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.informat_b_fo.ChtBFourthInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.informat_b_fo.PtBFourthInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.informat_b_fo.SbtBFourthInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.DayInfFv"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.DayInfSx"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.informat_m_fv.PnMFiveInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.informat_m_fv.VtMFiveInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.informat_m_fv.SrMFiveInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.informat_m_fv.ChtMFiveInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.informat_m_fv.PtMFiveInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.informat_m_fv.SbtMFiveInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.informat_m_sx.PnMSixInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.informat_m_sx.VtMSixInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.informat_m_sx.SrMSixInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.informat_m_sx.ChtMSixInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.informat_m_sx.PtMSixInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.informat_m_sx.SbtMSixInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.DayMenejF"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.DayMenejSC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.DayMenejTh"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.DayMenejFo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.menej_b_f.PnBFirstMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.menej_b_f.VtBFirstMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.menej_b_f.SrBFirstMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.menej_b_f.ChtBFirstMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.menej_b_f.PtBFirstMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.menej_b_f.SbtBFirstMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.menej_b_s.PnBSecondMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.menej_b_s.VtBSecondMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.menej_b_s.SrBSecondMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.menej_b_s.ChtBSecondMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.menej_b_s.PtBSecondMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.menej_b_s.SbtBSecondMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.menej_b_t.PnBThirdMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.menej_b_t.VtBThirdMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.menej_b_t.SrBThirdMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.menej_b_t.ChtBThirdMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.menej_b_t.PtBThirdMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.menej_b_t.SbtBThirdMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.menej_b_fo.PnBFourthMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.menej_b_fo.VtBFourthMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.menej_b_fo.SrBFourthMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.menej_b_fo.ChtBFourthMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.menej_b_fo.PtBFourthMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.menej_b_fo.SbtBFourthMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.DayMenejFv"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.DayMenejSx"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.menej_m_fv.ChtMFiveMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.menej_m_fv.PnMFiveMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.menej_m_fv.VtMFiveMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.menej_m_fv.SrMFiveMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.menej_m_fv.PtMFiveMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.menej_m_fv.SbtMFiveMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.menej_m_sx.PnMSixMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.menej_m_sx.VtMSixMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.menej_m_sx.SrMSixMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.menej_m_sx.ChtMSixMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.menej_m_sx.PtMSixMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.menej_m_sx.SbtMSixMenej"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.DaySocInfFv"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.DaySocInfSx"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.soc_informat_m_fv.PnMFiveSocInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.soc_informat_m_fv.VtMFiveSocInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.soc_informat_m_fv.SrMFiveSocInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.soc_informat_m_fv.ChtMFiveSocInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.soc_informat_m_fv.PtMFiveSocInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.soc_informat_m_fv.SbtMFiveSocInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.soc_informat_m_sx.PnMSixSocInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.soc_informat_m_sx.VtMSixSocInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.soc_informat_m_sx.SrMSixSocInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.soc_informat_m_sx.ChtMSixSocInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.soc_informat_m_sx.PtMSixSocInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.soc_informat_m_sx.SbtMSixSocInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.DayDYFv"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.DayDYSx"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.dy_m_fv.PnMFiveDY"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.dy_m_fv.VtMFiveDY"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.dy_m_fv.SrMFiveDY"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.dy_m_fv.ChtMFiveDY"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.dy_m_fv.PtMFiveDY"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.dy_m_fv.SbtMFiveDY"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.dy_m_sx.PnMSixDY"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.dy_m_sx.VtMSixDY"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.dy_m_sx.SrMSixDY"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.dy_m_sx.ChtMSixDY"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.dy_m_sx.PtMSixDY"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.dy_m_sx.SbtMSixDY"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.DayFiKMFv"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.DayFiKMSx"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.fik_m_fv.PnMFiveFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.fik_m_fv.VtMFiveFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.fik_m_fv.SrMFiveFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.fik_m_fv.ChtMFiveFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.fik_m_fv.PtMFiveFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.fik_m_fv.SbtMFiveFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.fik_m_sx.PnMSixFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.fik_m_sx.VtMSixFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.fik_m_sx.SrMSixFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.fik_m_sx.ChtMSixFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.fik_m_sx.PtMSixFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.fik_m_sx.SbtMSixFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.DayMatMFv"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.DayMatMSx"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.mat_m_fv.PnMFiveMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.mat_m_fv.VtMFiveMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.mat_m_fv.SrMFiveMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.mat_m_fv.ChtMFiveMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.mat_m_fv.PtMFiveMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.mat_m_fv.SbtMFiveMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.mat_m_sx.PnMSixMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.mat_m_sx.VtMSixMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.mat_m_sx.SrMSixMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.mat_m_sx.ChtMSixMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.mat_m_sx.PtMSixMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_m.mat_m_sx.SbtMSixMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.DayMatB"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.DayMatSC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.DayMatTh"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.DayMatFo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.mat_b_f.PnBFirstMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.mat_b_f.VtBFirstMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.mat_b_f.SrBFirstMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.mat_b_f.ChtBFirstMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.mat_b_f.PtBFirstMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.mat_b_f.SbtBFirstMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.mat_b_s.PnBSecondMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.mat_b_s.VtBSecondMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.mat_b_s.SrBSecondMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.mat_b_s.ChtBSecondMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.mat_b_s.PtBSecondMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.mat_b_s.SbtBSecondMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.mat_b_t.PnBThirdMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.mat_b_t.VtBThirdMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.mat_b_t.SrBThirdMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.mat_b_t.ChtBThirdMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.mat_b_t.PtBThirdMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.mat_b_t.SbtBThirdMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.mat_b_fo.PnBFourthMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.mat_b_fo.VtBFourthMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.mat_b_fo.SrBFourthMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.mat_b_fo.ChtBFourthMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.mat_b_fo.PtBFourthMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.mat_b_fo.SbtBFourthMat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.DayFiKF"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.DayFiKSC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.DayFiKTh"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.DayFiKFo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.fik_b_f.PnBFirstFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.fik_b_f.VtBFirstFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.fik_b_f.SrBFirstFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.fik_b_f.ChtBFirstFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.fik_b_f.PtBFirstFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.fik_b_f.SbtBFirstFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.fik_b_s.PnBSecondFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.fik_b_s.VtBSecondFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.fik_b_s.SrBSecondFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.fik_b_s.ChtBSecondFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.fik_b_s.PtBSecondFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.fik_b_s.SbtBSecondFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.fik_b_t.PnBThirdFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.fik_b_t.VtBThirdFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.fik_b_t.SrBThirdFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.fik_b_t.ChtBThirdFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.fik_b_t.PtBThirdFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.fik_b_t.SbtBThirdFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.fik_b_fo.PnBFourthFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.fik_b_fo.VtBFourthFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.fik_b_fo.SrBFourthFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.fik_b_fo.ChtBFourthFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.fik_b_fo.PtBFourthFiK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".days_b.fik_b_fo.SbtBFourthFiK"
+            android:screenOrientation="portrait" />
+        <activity android:name=".fragments_b.FirstGroupInfBF" android:screenOrientation="portrait"/>
+        <activity android:name=".fragments_b.SecondGroupInfBF" android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

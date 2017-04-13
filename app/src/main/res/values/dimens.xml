@@ -7,4 +7,6 @@
     <dimen name="txt_cr">48dp</dimen>
     <dimen name="txt_rest">58dp</dimen>
     <dimen name="txt_days">18dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
 </resources>
